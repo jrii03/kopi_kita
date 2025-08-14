@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Kita - Biji Kopi Organik Berkualitas Premium</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-neutral-background text-neutral-text-dark">
+    <!-- Navbar Section -->
+    <nav class="bg-white/90 backdrop-blur-sm border-b border-neutral-card py-4 px-4 md:px-8 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="#hero">
+                <h1 class="text-2xl font-heading font-bold text-primary">Kopi Kita</h1>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-neutral-text-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#produk" class="text-neutral-text-dark hover:text-primary transition-colors duration-300">Koleksi Kopi</a>
+                <a href="#panduan-seduh" class="text-neutral-text-dark hover:text-primary transition-colors duration-300">Panduan Seduh</a>
+                <a href="#kontak" class="text-neutral-text-dark hover:text-primary transition-colors duration-300">kontak</a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="bg-primary hover:bg-[#4a342d] text-white px-6 py-2 rounded-full font-medium transition-colors duration-300 shadow-md hover:shadow-lg">
+                    Belanja Sekarang
+                </a>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-4">
+            <a href="#produk" class="block px-4 py-2 text-neutral-text-dark hover:text-primary hover:bg-neutral-card rounded transition-colors duration-300">Koleksi Kopi</a>
+            <a href="#brewing-guide" class="block px-4 py-2 text-neutral-text-dark hover:text-primary hover:bg-neutral-card rounded transition-colors duration-300">Panduan Seduh</a>
+            <a href="#kontak" class="block px-4 py-2 text-neutral-text-dark hover:text-primary hover:bg-neutral-card rounded transition-colors duration-300">kontak</a>
+            <a href="https://wa.me/6281234567890" target="_blank" class="block mx-4 bg-primary hover:bg-[#4a342d] text-white px-6 py-3 rounded-full font-medium text-center transition-colors duration-300 shadow-md hover:shadow-lg">
+                Pesan Sekarang
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+<section class="py-16 md:py-24 px-4 md:px-8" id="hero">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Kolom Kiri - Konten -->
+        <div class="space-y-6">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-primary leading-tight">
+                Temukan Rasa Asli Kopi Nusantara.
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-text-light font-body leading-relaxed">
+                Biji kopi pilihan yang disangrai segar setiap hari untuk menemani momen terbaik Anda.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                <a href="https://wa.me/6281234567890" target="_blank" class="bg-primary hover:bg-[#4a342d] text-white px-8 py-4 rounded-full font-medium text-center transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                    Belanja Sekarang
+                </a>
+                <a href="#panduan-seduh" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-full font-medium text-center transition-all duration-300">
+                    Lihat Panduan Seduh
+                </a>
+            </div>
+        </div>
+        
+         <!-- Kolom Kanan - Gambar -->
+         <div class="relative h-64 md:h-96 overflow-hidden rounded-2xl">
+            <img src="https://images.pexels.com/photos/20190062/pexels-photo-20190062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Kopi Segar" class="w-full h-full object-cover rounded-2xl">
+        </div>
+    </div>
+</section>
+
+<!-- Why Our Coffee Section -->
+<section class="py-16 md:py-24 px-4 md:px-8 bg-neutral-card">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Mengapa Kopi Kami?
+            </h2>
+            <p class="text-lg text-neutral-text-light font-body max-w-3xl mx-auto">
+                Kami berkomitmen menyajikan kopi terbaik dengan proses yang ramah lingkungan dan berkualitas tinggi
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Keunggulan 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-heading font-semibold text-primary mb-3">
+                    Dipetik Tangan
+                </h3>
+                <p class="text-neutral-text-light font-body">
+                    Biji kopi 100% organik dan dipetik tangan dari petani lokal
+                </p>
+            </div>
+            
+            <!-- Keunggulan 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-heading font-semibold text-primary mb-3">
+                    Pengeringan Alami
+                </h3>
+                <p class="text-neutral-text-light font-body">
+                    Proses pengeringan alami di bawah sinar matahari langsung
+                </p>
+            </div>
+            
+            <!-- Keunggulan 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-heading font-semibold text-primary mb-3">
+                    Varietas Premium
+                </h3>
+                <p class="text-neutral-text-light font-body">
+                    Tersedia dalam berbagai varietas: Arabica Gayo, Robusta Temanggung, dan Java Preanger
+                </p>
+            </div>
+            
+            <!-- Keunggulan 4 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-heading font-semibold text-primary mb-3">
+                    Kemasan Segar
+                </h3>
+                <p class="text-neutral-text-light font-body">
+                    Kemasan kedap udara untuk menjaga kesegaran hingga 3 bulan
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Produk Section -->
+<section class="py-16 md:py-24 px-4 md:px-8" id="produk">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Varian Kopi Pilihan
+            </h2>
+            <p class="text-lg text-neutral-text-light font-body max-w-3xl mx-auto">
+                Nikmati keunikan setiap varietas kopi dari berbagai daerah penghasil kopi terbaik di Indonesia
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Produk 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-64 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
+                    <img src="https://images.pexels.com/photos/10327546/pexels-photo-10327546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h3 class="text-xl font-heading font-bold text-primary">Arabica Gayo</h3>
+                            <p class="text-sm text-neutral-text-light font-body">Dari Aceh, Sumatra</p>
+                        </div>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">Organik</span>
+                    </div>
+                    <p class="text-neutral-text-light font-body mb-4 leading-relaxed">
+                        Aroma floral dengan notes cokelat dan karamel. Body medium dengan aftertaste manis yang khas.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-heading font-bold text-primary">Rp 95.000</span>
+                        <span class="text-sm text-neutral-text-light">250g</span>
+                    </div>
+                    
+                    <button class="w-full mt-6 bg-primary hover:bg-[#4a342d] text-white py-3 rounded-full font-medium transition-colors duration-300 shadow-sm hover:shadow-md">
+                        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Arabica%20Gayo.%20Bisa%20dibantu%20untuk%20pemesanan%3F" target="_blank">Pesan Sekarang </a>
+                    </button>
+                    
+                </div>
+            </div>
+            
+            <!-- Produk 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-64 bg-gradient-to-br from-amber-200 to-amber-300 flex items-center justify-center">
+                    <img src="https://images.pexels.com/photos/31120018/pexels-photo-31120018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h3 class="text-xl font-heading font-bold text-primary">Robusta Temanggung</h3>
+                            <p class="text-sm text-neutral-text-light font-body">Dari Jawa Tengah</p>
+                        </div>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">Organik</span>
+                    </div>
+                    <p class="text-neutral-text-light font-body mb-4 leading-relaxed">
+                        Full body dengan tingkat kafein tinggi. Notes earthy dan kayu dengan crema yang kental.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-heading font-bold text-primary">Rp 75.000</span>
+                        <span class="text-sm text-neutral-text-light">250g</span>
+                    </div>
+                    <button class="w-full mt-6 bg-primary hover:bg-[#4a342d] text-white py-3 rounded-full font-medium transition-colors duration-300 shadow-sm hover:shadow-md">
+                        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Robusta%20Temanggung.%20Bisa%20dibantu%20untuk%20pemesanan%3F" target="_blank">
+                        Pesan Sekarang </a>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Produk 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-64 bg-gradient-to-br from-amber-300 to-amber-400 flex items-center justify-center">
+                    <img src="https://images.pexels.com/photos/14602942/pexels-photo-14602942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h3 class="text-xl font-heading font-bold text-primary">Java Preanger</h3>
+                            <p class="text-sm text-neutral-text-light font-body">Dari Jawa Barat</p>
+                        </div>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">Organik</span>
+                    </div>
+                    <p class="text-neutral-text-light font-body mb-4 leading-relaxed">
+                        Balance antara acidity dan body. Notes fruity dengan finish yang clean dan smooth.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-heading font-bold text-primary">Rp 85.000</span>
+                        <span class="text-sm text-neutral-text-light">250g</span>
+                    </div>
+                    <button class="w-full mt-6 bg-primary hover:bg-[#4a342d] text-white py-3 rounded-full font-medium transition-colors duration-300 shadow-sm hover:shadow-md">
+                        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Java%20Preanger.%20Bisa%20dibantu%20untuk%20pemesanan%3F" target="_blank">
+                        Pesan Sekarang </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20melihat%20semua%20varian%20produk." target="_blank" class="inline-flex items-center text-primary hover:text-[#4a342d] font-medium transition-colors duration-300">
+                Lihat Semua Varian
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Brewing Guide Section -->
+<section class="py-16 md:py-24 px-4 md:px-8 bg-neutral-card" id="panduan-seduh">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Panduan Menyeduh Kopi
+            </h2>
+            <p class="text-lg text-neutral-text-light font-body max-w-3xl mx-auto">
+                Temukan cara terbaik untuk mengekstrak rasa penuh dari biji kopi kami
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Konten Panduan -->
+            <div class="space-y-8">
+                <!-- Metode V60 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-heading font-bold text-primary">V60 Dripper</h3>
+                            <p class="text-neutral-text-light font-body">Metode pour-over yang menghasilkan kopi bersih dan kompleks</p>
+                        </div>
+                    </div>
+                    <div class="pl-14">
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="bg-secondary w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="text-neutral-text-light font-body">Rasio: 1:15 (15g kopi : 225ml air)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-secondary w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="text-neutral-text-light font-body">Suhu air: 92-96°C</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-secondary w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="text-neutral-text-light font-body">Waktu seduh: 2.5-3 menit</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Metode French Press -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-heading font-bold text-primary">French Press</h3>
+                            <p class="text-neutral-text-light font-body">Metode immersion yang menghasilkan kopi full body dan kaya</p>
+                        </div>
+                    </div>
+                    <div class="pl-14">
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="bg-secondary w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="text-neutral-text-light font-body">Rasio: 1:12 (30g kopi : 360ml air)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-secondary w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="text-neutral-text-light font-body">Suhu air: 94-96°C</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-secondary w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                <span class="text-neutral-text-light font-body">Waktu seduh: 4 menit</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visual Guide -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-heading font-bold text-primary mb-2">Tips Umum</h3>
+                    <p class="text-neutral-text-light font-body">Untuk hasil terbaik setiap kali</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-secondary/10 p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <p class="text-neutral-text-light font-body"><span class="font-semibold text-primary">Giling biji tepat sebelum menyeduh</span> untuk menjaga keharuman dan rasa optimal.</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-secondary/10 p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <p class="text-neutral-text-light font-body"><span class="font-semibold text-primary">Gunakan air bersih dan berkualitas</span> untuk hasil seduhan yang terbaik.</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-secondary/10 p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <p class="text-neutral-text-light font-body"><span class="font-semibold text-primary">Simpan kopi dalam wadah kedap udara</span> di tempat sejuk dan kering.</p>
+                    </div>
+                    
+                    <div class="pt-6">
+                        <a href="https://wa.me/6281234567890" target="_blank" class="w-full bg-primary hover:bg-[#4a342d] text-white py-3 rounded-full font-medium transition-colors duration-300 shadow-sm hover:shadow-md text-center block">
+                            Tanya Teknik Seduh ke Barista Kami
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimoni Section -->
+<section class="py-16 md:py-24 px-4 md:px-8" id="testimoni">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Kata Mereka yang Sudah Mencoba
+            </h2>
+            <p class="text-lg text-neutral-text-light font-body max-w-3xl mx-auto">
+                Pengalaman nyata dari pecinta kopi yang telah menikmati keunikan kopi kami
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimoni 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center mb-6">
+                    <div class="flex text-amber-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-neutral-text-light font-body mb-6 italic">
+                    "Arabica Gayo dari Kopi Kita benar-benar luar biasa! Aromanya kaya dan aftertaste-nya manis. Saya jadi langganan setiap minggu. Proses pengeringan alami terasa banget di setiap tegukan."
+                </p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-primary font-bold">RS</span>
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-bold text-primary">Rina Sari</h4>
+                        <p class="text-sm text-neutral-text-light">Barista Rumahan, Jakarta</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimoni 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center mb-6">
+                    <div class="flex text-amber-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-200" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-neutral-text-light font-body mb-6 italic">
+                    "Saya pemilik kedai kopi kecil di Bandung. Sejak pakai Robusta Temanggung dari sini, pelanggan selalu puas dengan crema dan body-nya. Benar-benar kopi organik terbaik dengan harga terjangkau!"
+                </p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-300 to-amber-400 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-primary font-bold">DM</span>
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-bold text-primary">Dedi</h4>
+                        <p class="text-sm text-neutral-text-light">Pemilik Kedai Kopi, Bandung</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimoni 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center mb-6">
+                    <div class="flex text-amber-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-neutral-text-light font-body mb-6 italic">
+                    "Java Preanger memberikan keseimbangan yang luar biasa. Saya biasa pakai metode V60, hasilnya selalu bersih dengan acidity yang pas. Kemasannya juga sangat menjaga kesegaran. Highly recommended!"
+                </p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-primary font-bold">LP</span>
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-bold text-primary">Laras Putri</h4>
+                        <p class="text-sm text-neutral-text-light">Pecinta Kopi, Yogyakarta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How to Order Section -->
+<section class="py-16 md:py-24 px-4 md:px-8 bg-neutral-card" id="cara-pesan">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Cara Pemesanan yang Mudah
+            </h2>
+            <p class="text-lg text-neutral-text-light font-body max-w-3xl mx-auto">
+                Dapatkan kopi terbaik kami dengan langkah-langkah sederhana dalam hitungan menit
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+            <!-- Langkah 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-2xl font-heading font-bold text-primary">1</span>
+                </div>
+                <h3 class="text-xl font-heading font-bold text-primary mb-3">Pilih Varian</h3>
+                <p class="text-neutral-text-light font-body">
+                    Pilih varian kopi favorit Anda dari koleksi Arabica Gayo, Robusta Temanggung, atau Java Preanger
+                </p>
+            </div>
+            
+            <!-- Langkah 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-2xl font-heading font-bold text-primary">2</span>
+                </div>
+                <h3 class="text-xl font-heading font-bold text-primary mb-3">Hubungi Kami</h3>
+                <p class="text-neutral-text-light font-body">
+                    Kirim pesan melalui WhatsApp dengan varian dan jumlah yang diinginkan
+                </p>
+            </div>
+            
+            <!-- Langkah 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-2xl font-heading font-bold text-primary">3</span>
+                </div>
+                <h3 class="text-xl font-heading font-bold text-primary mb-3">Konfirmasi</h3>
+                <p class="text-neutral-text-light font-body">
+                    Kami konfirmasi pesanan dan total pembayaran melalui WhatsApp
+                </p>
+            </div>
+            
+            <!-- Langkah 4 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-2xl font-heading font-bold text-primary">4</span>
+                </div>
+                <h3 class="text-xl font-heading font-bold text-primary mb-3">Dikirim Segar</h3>
+                <p class="text-neutral-text-light font-body">
+                    Kopi dikemas segar dan dikirim langsung ke alamat Anda
+                </p>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <h3 class="text-2xl font-heading font-bold text-primary mb-8">
+                Pesan Sekarang dan Nikmati Kopi Terbaik
+            </h3>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Kita,%20saya%20ingin%20memesan%20kopi..." target="_blank" class="bg-primary hover:bg-[#4a342d] text-white px-10 py-5 rounded-full font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Pesan via WhatsApp
+                </a>
+                
+                <a href="tel:+6281234567890" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-5 rounded-full font-medium text-lg transition-all duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    Hubungi Kami
+                </a>
+            </div>
+            
+            <div class="mt-8 text-neutral-text-light font-body">
+                <p class="flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    Respon dalam 1 jam kerja
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-white py-16 px-4 md:px-8" id="kontak">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Brand Info -->
+            <div class="md:col-span-2">
+                <h2 class="text-2xl font-heading font-bold mb-4">Kopi Kita</h2>
+                <p class="font-body text-amber-100 mb-6 max-w-md">
+                    Menyajikan biji kopi organik berkualitas tinggi dari petani lokal di pegunungan Jawa dan Sumatra. Diproses secara alami tanpa bahan kimia.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com" target="_blank" class="bg-amber-800/20 hover:bg-amber-800/30 p-3 rounded-full transition-colors duration-300">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="bg-amber-800/20 hover:bg-amber-800/30 p-3 rounded-full transition-colors duration-300">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-heading font-semibold mb-4">Tautan Cepat</h3>
+                <ul class="space-y-3">
+                    <li><a href="#produk" class="font-body text-amber-100 hover:text-white transition-colors duration-300">Varian Kopi</a></li>
+                    <li><a href="#panduan-seduh" class="font-body text-amber-100 hover:text-white transition-colors duration-300">Panduan Seduh</a></li>
+                    <li><a href="#testimoni" class="font-body text-amber-100 hover:text-white transition-colors duration-300">Testimoni</a></li>
+                    <li><a href="#cara-pesan" class="font-body text-amber-100 hover:text-white transition-colors duration-300">Cara Pemesanan</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-heading font-semibold mb-4">Kontak Kami</h3>
+                <ul class="space-y-3 font-body">
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span class="text-amber-100">+62 812 3456 7890</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span class="text-amber-100">info@kopikita.com</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-amber-200 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span class="text-amber-100">Jl. Kopi No. 123, Malang, Jawa Timur</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="border-t border-amber-800/30 mt-12 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="font-body text-amber-200 text-sm">
+                    &copy; 2024 Kopi Kita. Hak Cipta Dilindungi.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <p class="font-body text-amber-200 text-sm">
+                        Dibuat dengan ❤️ untuk para pecinta kopi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        
+        // Toggle mobile menu
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking any menu link
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Optional: Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const isClickInsideNav = event.target.closest('nav');
+            if (!isClickInsideNav && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
